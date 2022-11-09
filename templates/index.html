@@ -8,17 +8,29 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit-icons.min.js"></script>
   </head>
-<body>
-    <h3>Word Problem Solver</h3>
-
-<div>
-  <form action="/solve" method="POST">
-    <label for="question_text">Enter your question:</label>
-      <textarea name="question_text" rows="10" cols="30"></textarea>>
-    <br>
-    <input type="submit" value="Submit">
-  </form>
-  <p><b>Example question:<i> Jim travelled at a speed of 20 km/h for 7200 secs. What was the distance covered?</i></b></p>
-</div>
-</body>
+  <body style="background-color: #484848; height:100vh;" class="uk-text-center">
+    <div class="uk-padding-large">
+    <div style="padding-top:5%; padding-bottom:5%;">
+      <h3 class="uk-heading-large" style="color:aqua;">Word Problem Solver</h3>
+    <div style="padding-left: 15%; padding-right: 15%;">
+      <div>
+        <form action="/solve" method="POST">
+          <legend class="uk-legend" style="color:white;">Enter your question:</legend>
+          <div class="uk-margin">
+            <div class="uk-inline uk-width-1-1">
+              <span class="uk-form-icon" uk-icon="icon: question"></span>
+              <input name="question_text" class="uk-input" placeholder="Question" aria-label="Question"></input>
+            </div> 
+          </div>
+          <input class="uk-button uk-button-default" style="color:white;" type="submit" value="Submit">
+        </form>
+        <div class="uk-margin">
+          <p style="color:white;margin-bottom: 0;">Example question:</p>
+          <p uk-tooltip="title: Copy this question; pos: bottom;" style="color:white; margin-top: 0;"><b><i> Jim travelled at a speed of 20 km/h for 7200 secs. What was the distance covered?</i></b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </body>
 </html>

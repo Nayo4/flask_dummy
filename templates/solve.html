@@ -8,12 +8,17 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit-icons.min.js"></script>
   </head>
-<body>
-    <h3>Word Problem Solver</h3>
-
-<div>
-  <h3>Your solution is: {{ final_value }}</h3>
-  <p><a href="{{ url_for('home') }}">Try another word problem!</a></p>
-</div>
-</body>
+  <body style="background-color: #484848; height:100vh;" class="uk-text-center">
+    <div class="uk-padding-large">
+    <div style="padding-top:5%; padding-bottom:5%;">
+      <h3 class="uk-heading-large" style="color:aqua;">Word Problem Solver</h3>
+    <div style="padding-left: 15%; padding-right: 15%;">
+      <div>
+        <legend class="uk-legend" style="color:white;">Your solution is: <b> {{ final_value }} </b></legend>
+        <p><a class="uk-button uk-button-default" style="color:white;" href="{{ url_for('home') }}">Try another word problem!</a></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </body>
 </html>
